@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/transferenciasFragment"
+        android:name="com.example.proyecto.viewmodel.ui.transferencias.TransferenciasFragment"
+        android:label="fragment_transferencias"
+        tools:layout="@layout/fragment_transferencias" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.proyecto.viewmodel.ui.inicio.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_usuarioFragment"
+            app:destination="@id/usuarioFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_zonaFragment"
+            app:destination="@id/zonaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuarioFragment"
+        android:name="com.example.proyecto.viewmodel.ui.usuario.UsuarioFragment"
+        android:label="fragment_usuario"
+        tools:layout="@layout/fragment_usuario" />
+    <fragment
+        android:id="@+id/reservaFragment"
+        android:name="com.example.proyecto.viewmodel.ui.reservas.ReservaFragment"
+        android:label="fragment_reserva"
+        tools:layout="@layout/fragment_reserva" >
+        <action
+            android:id="@+id/action_reservaFragment_to_transferenciasFragment"
+            app:destination="@id/transferenciasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zonaFragment"
+        android:name="com.example.proyecto.viewmodel.ui.zona.ZonaFragment"
+        android:label="fragment_zona"
+        tools:layout="@layout/fragment_zona" >
+        <action
+            android:id="@+id/action_zonaFragment_to_reservaFragment"
+            app:destination="@id/reservaFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/administradorFragment">
+    <fragment
+        android:id="@+id/administradorFragment"
+        android:name="com.example.proyecto.ui.administrador.AdministradorFragment"
+        android:label="fragment_administrador"
+        tools:layout="@layout/fragment_administrador" >
+        <action
+            android:id="@+id/action_administradorFragment_to_inicioAdminFragment"
+            app:destination="@id/inicioAdminFragment" />
+        <action
+            android:id="@+id/action_administradorFragment_to_centroDeportivoFragment"
+            app:destination="@id/centroDeportivoFragment" />
+        <action
+            android:id="@+id/action_administradorFragment_to_reservasAdminFragment"
+            app:destination="@id/reservasAdminFragment" />
+        <action
+            android:id="@+id/action_administradorFragment_to_canchasFragment"
+            app:destination="@id/canchasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/canchasFragment"
+        android:name="com.example.proyecto.ui.canchas.CanchasFragment"
+        android:label="fragment_canchas"
+        tools:layout="@layout/fragment_canchas" />
+    <fragment
+        android:id="@+id/centroDeportivoFragment"
+        android:name="com.example.proyecto.ui.centroDeportivo.CentroDeportivoFragment"
+        android:label="fragment_centro_deportivo"
+        tools:layout="@layout/fragment_centro_deportivo" />
+    <fragment
+        android:id="@+id/inicioAdminFragment"
+        android:name="com.example.proyecto.ui.inicioAdmin.InicioAdminFragment"
+        android:label="fragment_inicio_admin"
+        tools:layout="@layout/fragment_inicio_admin" />
+    <fragment
+        android:id="@+id/reservasAdminFragment"
+        android:name="com.example.proyecto.ui.reservasAdmin.ReservasAdminFragment"
+        android:label="fragment_reservas_admin"
+        tools:layout="@layout/fragment_reservas_admin" />
+</navigation>

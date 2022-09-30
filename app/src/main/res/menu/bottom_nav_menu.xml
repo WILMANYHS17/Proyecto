@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/navigation_usuario"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Usuario" />
+
+    <item
+        android:id="@+id/navigation_zona"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="En tu Zona" />
+    <item
+        android:id="@+id/navigation_reserva"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Reserva" />
+    <item
+        android:id="@+id/navigation_transferencia"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Transferencia" />
+
+
+
+</menu>
